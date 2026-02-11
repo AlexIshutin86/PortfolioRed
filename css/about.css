@@ -1,0 +1,127 @@
+
+
+section{
+    min-height: 100vh;
+    padding: 0.8rem 12%;
+    width: 100%;
+    position: relative;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.about img{
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.info-box h3{
+    font-size: 1.8rem;
+    font-family: 500;
+    opacity: 0.8;
+}
+
+.info-box h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.info-box span{
+    background: linear-gradient(to right, blue, red,yellow);
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.btn-group{
+    display: flex;
+    gap: 3rem;
+}
+
+.btn{
+    border-radius: 3rem;
+    border: 2px solid black;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.socials{
+    display: flex;
+    gap: 3rem;
+}
+
+.socials i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+.socials i:hover{
+   transform: scale(1.1);
+}
+
+/*reviling of text from left part*/
+
+.about .info-box:nth-child(2){
+    z-index: 1;
+}
+
+.about .info-box:nth-child(2) .text,
+.about .info-box:nth-child(2) .btn-group,
+.about .info-box:nth-child(2) .socials,
+.about .info-box:nth-child(2) .btn{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.about .info-box:nth-child(2) .text{
+        animation-delay: .2s;
+}
+.about .info-box:nth-child(2) .btn-group{
+        animation-delay: .3s;
+}
+.about .info-box:nth-child(2) .socials{
+        animation-delay: .6s;
+    }
+.about .info-box:nth-child(2) .btn{
+    animation-delay: .4s;
+}
+
+
+

@@ -1,0 +1,54 @@
+@import "./stiles-main.css";
+@import "./respocivnes.css";
+
+#containerBrush {
+  width: 100%;
+  max-width: 500px; /* Adjust as needed */
+  height: 400px;
+  position: relative;
+  margin: 0 auto; /* Center the container */
+}
+
+#containerBrush canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain; /* Ensures proper scaling */
+}
+
+main {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem; /* Reduced padding for better mobile view */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  article {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  #containerBrush {
+    height: 300px; /* Smaller height on mobile */
+    max-width: 100%;
+  }
+}
+
+/* Additional responsive breakpoint */
+@media (max-width: 480px) {
+  #containerBrush {
+    height: 250px;
+  }
+}

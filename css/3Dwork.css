@@ -1,0 +1,48 @@
+
+@import "./stiles-main.css";
+@import "./respocivnes.css";
+
+
+.section3d{
+  top: 5rem;
+}
+
+#container3D {
+  flex: 1 1 400px; /* Grow, shrink, minimum width */
+  min-height: 400px;
+  max-width: 70rem;
+ 
+  position: relative;
+}
+
+#container3D canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+
+main{
+  width: 100%;
+  padding: 2rem;
+}
+
+
+article{
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+ 
+  padding: 9rem;
+}
+
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  } 
+}

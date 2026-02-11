@@ -1,0 +1,148 @@
+@media (max-width: 1280px){
+    header {
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .about-container{
+        gap: 3rem;
+    }
+
+    .experience-info{
+        flex-direction: column;
+    }
+
+    .input-box input{
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    }
+
+    .input input::placeholder{
+        font-size: 2.5rem;
+    }
+
+    .input-box i{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    header{ 
+    padding: 1rem 1rem;
+    gap: 1rem;
+    }
+
+    header .logo{
+        font-size: 1rem;
+    }
+
+    header .visit-btn{
+        display: none;
+    }
+
+    .input-box input{
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+
+     .input-box input::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .input i{
+        display: none;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience-info img{
+        width: 45vw;
+    }
+
+    .about-container{
+        flex-direction: column;
+
+    }
+
+    .about-container img{
+        width: 60vw;
+    }
+
+    .project-card img{
+    width: 30vw;
+    border-radius: 2.5rem;
+    }
+
+    #menu-icon{
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px){
+    header #menu-icon{
+        display: block !important;
+    }
+   
+    .nav-links{
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0; 
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.884);
+        border-radius: 3rem;
+    }
+    
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+
+    .nav-links.active{
+        display: block !important;
+    }
+
+    header{
+        padding: 1rem 5rem;
+        gap: 8rem;
+    }
+
+    header .logo{
+        font-size: 1.5rem;
+    }
+
+    .about-container img{
+        width: 80vw;
+    }
+
+    .input-box input{
+        padding: 0.5rem 3rem;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .input-box input::placeholder{
+        font-size: 1.5rem;
+    }
+
+    .futer ul{
+        gap: 1rem;
+    }
+
+    .project-card img{
+    width: 40vw;
+    border-radius: 2.5rem;
+    }
+    
+
+    
+
+    
+}
